@@ -22,7 +22,7 @@ backend "remote" {
 		organization = "Cloud-Quick-Labs"
 
 		workspaces {
-			name = "AWSEKS"
+			name = "AWS_EKS_Labs"
 		}
 	}
 }
