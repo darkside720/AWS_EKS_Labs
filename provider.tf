@@ -43,7 +43,7 @@ provider "kubernetes" {
 */
 
 provider "aws" {
-  region = "us-west-2"
+  region = "us-east-1"
 }
 
 resource "random_string" "suffix" {
