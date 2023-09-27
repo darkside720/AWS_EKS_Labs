@@ -30,9 +30,13 @@ resource "aws_eks_node_group" "cloudquicklabs" {
   }
 
   scaling_config {
-    desired_size = var.scaling_desired_size
-    max_size     = var.scaling_max_size
-    min_size     = var.scaling_min_size
+    desired_size = 2
+    max_size     = 4
+    min_size     = 2
+    ### Original settings
+    #desired_size = var.scaling_desired_size
+    #max_size     = var.scaling_max_size
+    #min_size     = var.scaling_min_size
   }
 
   depends_on = [
