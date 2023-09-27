@@ -1,6 +1,5 @@
 resource "aws_eks_cluster" "cloudquicklabs" {
-  #name     = var.cluster_name
-  name     = cloudquicklabs
+  name     = var.cluster_name
   role_arn = aws_iam_role.cloudquicklabs.arn
 
   vpc_config {
